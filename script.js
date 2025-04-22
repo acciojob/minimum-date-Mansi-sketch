@@ -1,5 +1,18 @@
 function minDate(dates) {
   //write you code here
+	const currentDate= new Date();
+	let n = dates.length;
+	let minStr = dates[0]; 
+	let min = new Date(dates[0]);
+	for (let i = 0; i < n; i++) {
+		let current = new Date(dates[i]);
+    if (current < min) {
+      min = current;
+      minStr = dates[i];
+		}
+	}
+return minStr;
+
 }
 
 // Do not change the code
@@ -8,7 +21,7 @@ var dates = [
   "2023/03/01",
   "2023/03/02",
   "2023/03/03",
-  "2023/03/04",
+  "2022/03/04",
   "2023/03/05",
   "2023/03/06",
   "2023/03/07",
