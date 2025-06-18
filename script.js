@@ -1,20 +1,15 @@
 function minDate(dates) {
   //write you code here
-	const currentDate= new Date();
-	let n = dates.length;
-	let minStr = dates[0]; 
-	let min = new Date(dates[0]);
-	for (let i = 0; i < n; i++) {
-		let current = new Date(dates[i]);
-    if (current < min) {
-      min = current;
-      minStr = dates[i];
+	let currect = dates[0];
+	let earlier = 0
+	for(let i = 0; i < length(dates); i++){
+		if(currect[0] > dates[i]){
+			earlier = dates[i]
+			currect = i;
 		}
 	}
-return minStr;
-
+	return currect;
 }
-
 // Do not change the code
 
 var dates = [
