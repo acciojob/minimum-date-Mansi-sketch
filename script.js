@@ -2,7 +2,7 @@ function minDate(dates) {
   //write you code here
 	let currect = dates[0];
 	let earlier = 0
-	for(let i = 0; i < length(dates); i++){
+	for(let i = 0; i < dates.length;i++){
 		if(currect[0] > dates[i]){
 			earlier = dates[i]
 			currect = i;
@@ -46,3 +46,4 @@ var dates = [
 ];
 
 alert(minDate(dates));
+
